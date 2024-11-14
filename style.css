@@ -158,4 +158,9 @@ body {
         width: 100%; /* Assure que l'image utilise toute la largeur de l'écran */
         height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
     }
+    
+    .container1 .image {
+        width: 100%; /* Assure que l'image utilise toute la largeur de l'écran */
+        height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+    }
 }
