@@ -89,6 +89,12 @@ body {
     width: 100%; /* Réduit la largeur à 80% du conteneur parent */
     max-width: 1000px; /* Optionnel : limite la largeur maximale */
 }
+.seahorse {
+    color: #8E8E8E; /* Couleur du texte */
+    font-size: 24px; /* Taille du texte */
+    font-family: 'Tahoma', sans-serif; /* Change la police ici */
+    text-align: center; /* Centre le texte */
+}
 .banniere {
     position: fixed; /* Rend la bannière fixe */
     top: 0; /* Assure que la bannière est alignée en haut de l'écran */
@@ -120,7 +126,7 @@ body {
 .center {
     text-align: center;
     font-size: 32px; /* Taille du texte */
-    margin-top: 200px; /* Espace au-dessus */
+    margin-top: 100px; /* Espace au-dessus */
 }
 /* Media Queries pour les petits écrans */
 @media only screen and (max-width: 768px) {
