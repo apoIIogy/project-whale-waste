@@ -72,6 +72,12 @@ body {
     padding-left: 30px;
     padding-right: 30px;
 }
+.git {
+    color: #2e2e2e; /* Couleur du texte */
+    font-size: 10px; /* Taille du texte */
+    font-family: 'Tahoma', sans-serif; /* Change la police ici */
+    text-align: center; /* Centre le texte */
+}
 .text_expliquation {
     text-align: center; /* Centre le texte */
     margin-top: 10px; /* Espace au-dessus */
@@ -158,7 +164,6 @@ body {
         width: 100%; /* Assure que l'image utilise toute la largeur de l'écran */
         height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
     }
-    
     .container1 .image {
         width: 100%; /* Assure que l'image utilise toute la largeur de l'écran */
         height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
