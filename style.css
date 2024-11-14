@@ -65,7 +65,7 @@ body {
     left: 50%; /* Centré horizontalement */
     transform: translate(-50%, -50%); /* Ajustement pour centrer */
     color: #f0f0f0; /* Couleur du texte */
-    font-size: 30px; /* Taille du texte */
+    font-size: 50px; /* Taille du texte */
     font-family: 'Tahoma', sans-serif; /* Change la police ici */
     background-color: rgba(128, 128, 128, 0.3); /* Fond gris transparent */
     padding: 10px; /* Espace autour du texte */
@@ -97,6 +97,15 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin: 0; /* Supprime toute marge potentielle */
 }
+#mon-projet {
+    scroll-margin-top: 100px; /* Ajustez la valeur pour l'espace souhaité */
+}
+#pourquoi {
+    scroll-margin-top: 100px; /* Ajustez la valeur pour l'espace souhaité */
+}
+#photo {
+    scroll-margin-top: 100px; /* Ajustez la valeur pour l'espace souhaité */
+}
 .center1 {
     text-align: center;
     font-size: 32px; /* Taille du texte */
@@ -107,7 +116,6 @@ body {
     font-size: 32px; /* Taille du texte */
     margin-top: 200px; /* Espace au-dessus */
 }
-
 /* Media Queries pour les petits écrans */
 @media only screen and (max-width: 768px) {
     .navbar {
