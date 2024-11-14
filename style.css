@@ -1,5 +1,11 @@
 body {
     margin: 0; /* Supprime les marges par défaut */
+    margin: 0; /* Supprime les marges par défaut */
+    background-image: url('mer.png'); /* Remplacez 'path/to/your-image.jpg' par le chemin de votre image */
+    background-size: cover; /* Couvre toute la page */
+    background-position: center center; /* Centre l'image */
+    background-attachment: fixed; /* Rend l'image de fond fixe lors du défilement */
+    background-repeat: no-repeat; /* Évite que l'image se répète */
 }
 .navbar {
     background-color: #ffffff; /* Fond blanc transparent */
@@ -27,7 +33,7 @@ body {
     transition: background-color 0.3s; /* Animation pour l'arrière-plan */
 }
 .navbar a:hover {
-    background-color: rgba(200, 200, 200, 0.5); /* Couleur au survol */
+    background-color: rgb(255, 255, 255); /* Couleur au survol */
 }
 .menu-button {
     cursor: pointer;
@@ -73,7 +79,7 @@ body {
     padding-right: 30px;
 }
 .git {
-    color: #2e2e2e; /* Couleur du texte */
+    color: #f3f3f3; /* Couleur du texte */
     font-size: 10px; /* Taille du texte */
     font-family: 'Tahoma', sans-serif; /* Change la police ici */
     text-align: center; /* Centre le texte */
@@ -83,14 +89,14 @@ body {
     margin-top: 10px; /* Espace au-dessus */
     font-size: 24px; /* Taille du texte */
     font-family: 'Arial', sans-serif; /* Change la police ici */            
-    color: #8E8E8E; /* Couleur */
+    color: #ffffff; /* Couleur */
     display: block; /* Affiche le paragraphe comme un bloc */
     margin: 50px auto 0; /* Espace au-dessus et centrage */
     width: 100%; /* Réduit la largeur à 80% du conteneur parent */
     max-width: 1000px; /* Optionnel : limite la largeur maximale */
 }
 .seahorse {
-    color: #8E8E8E; /* Couleur du texte */
+    color: #ffffff; /* Couleur du texte */
     font-size: 24px; /* Taille du texte */
     font-family: 'Tahoma', sans-serif; /* Change la police ici */
     text-align: center; /* Centre le texte */
@@ -122,11 +128,13 @@ body {
     text-align: center;
     font-size: 32px; /* Taille du texte */
     margin-top: 50px; /* Espace au-dessus */
+    color: #ffffff; /* Couleur */
 }
 .center {
     text-align: center;
     font-size: 32px; /* Taille du texte */
     margin-top: 100px; /* Espace au-dessus */
+    color: #ffffff; /* Couleur */
 }
 /* Media Queries pour les petits écrans */
 @media only screen and (max-width: 768px) {
