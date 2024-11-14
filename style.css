@@ -1,0 +1,153 @@
+body {
+    margin: 0; /* Supprime les marges par défaut */
+}
+.navbar {
+    background-color: #ffffff; /* Fond blanc transparent */
+    padding: 10px; /* Espace autour du menu */
+    position: fixed; /* Fixe le menu */
+    top: 72px; /* Positionné à 20px du haut */
+    right: 0px; /* Positionné à 20px de la droite */
+    z-index: 1000; /* Assure que le menu est au-dessus du contenu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour le menu */
+    display: none; /* Masquer le menu par défaut */
+    flex-direction: column; /* Alignement vertical */
+    transform: translateY(-10px); /* Positionne le menu légèrement plus haut */
+    transition: transform 0.3s, display 0.3s; /* Animation pour le mouvement et l'affichage */
+}
+.navbar.show {
+    display: flex; /* Montre le menu */
+    transform: translateY(0); /* Remet le menu à sa position d'origine */
+}
+.navbar a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #000733; /* Couleur du texte */
+    margin: 10px 0; /* Espace entre les liens */
+    font-family: 'Tahoma', sans-serif; /* Police du menu */
+    padding: 10px; /* Espace autour des liens */
+    transition: background-color 0.3s; /* Animation pour l'arrière-plan */
+}
+.navbar a:hover {
+    background-color: rgba(200, 200, 200, 0.5); /* Couleur au survol */
+}
+.menu-button {
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed; /* Fixe le bouton */
+    top: 0px; /* Positionné à 20px du haut */
+    right: 0px; /* Positionné à 20px de la droite */
+    z-index: 1002; /* Au-dessus du menu */
+    padding: 24px; /* Espace autour du bouton */
+    background-color: #fff; /* Fond du bouton */
+    color: #000733;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour le bouton */
+}
+.test {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.container {
+    position: relative;
+    display: block;
+    margin: 0 auto; /* Centre horizontalement le conteneur */
+    text-align: center; /* Centre le contenu à l'intérieur */
+    width: 100%; /* Largeur du conteneur */
+}
+.image {
+    height: auto; /* Garde la proportion */
+    display: block;
+    margin: 0 auto;
+}
+.texte {
+    position: absolute;
+    top: 20%; /* Centré verticalement */
+    left: 50%; /* Centré horizontalement */
+    transform: translate(-50%, -50%); /* Ajustement pour centrer */
+    color: #f0f0f0; /* Couleur du texte */
+    font-size: 30px; /* Taille du texte */
+    font-family: 'Tahoma', sans-serif; /* Change la police ici */
+    background-color: rgba(128, 128, 128, 0.3); /* Fond gris transparent */
+    padding: 10px; /* Espace autour du texte */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.text_expliquation {
+    text-align: center; /* Centre le texte */
+    margin-top: 10px; /* Espace au-dessus */
+    font-size: 24px; /* Taille du texte */
+    font-family: 'Arial', sans-serif; /* Change la police ici */            
+    color: #8E8E8E; /* Couleur */
+    display: block; /* Affiche le paragraphe comme un bloc */
+    margin: 50px auto 0; /* Espace au-dessus et centrage */
+    width: 100%; /* Réduit la largeur à 80% du conteneur parent */
+    max-width: 1000px; /* Optionnel : limite la largeur maximale */
+}
+.banniere {
+    position: fixed; /* Rend la bannière fixe */
+    top: 0; /* Assure que la bannière est alignée en haut de l'écran */
+    left: 0; /* S'assure qu'elle démarre à gauche */
+    font-size: 26px; /* Taille du texte */
+    font-family: 'Lato', sans-serif; /* Change la police ici */            
+    z-index: 1001; /* Assure que la bannière est au-dessus des autres éléments */
+    width: 100%; /* S'assure que la bannière prend toute la largeur */
+    padding: 20px;
+    color: #000733;
+    background-color: #fff; /* Ajoute une couleur de fond pour s'assurer que le texte est lisible */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Supprime toute marge potentielle */
+}
+.center1 {
+    text-align: center;
+    font-size: 32px; /* Taille du texte */
+    margin-top: 50px; /* Espace au-dessus */
+}
+.center {
+    text-align: center;
+    font-size: 32px; /* Taille du texte */
+    margin-top: 200px; /* Espace au-dessus */
+}
+
+/* Media Queries pour les petits écrans */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        top: 0; /* Ajuste la position pour les petits écrans */
+        right: 0; /* Aligne le menu à droite */
+        width: 31%; /* Utilise toute la largeur de l'écran */
+        margin-top: 20px; /* Espace au-dessus */
+    }
+
+    .menu-button {
+        top: 0; /* Positionne le bouton en haut de l'écran */
+        right: 0; /* Positionne à droite */
+        font-size: 18px; /* Réduit la taille du texte du bouton */
+        padding: 8px; /* Réduit l'espacement */
+    }
+
+    .texte {
+        font-size: 20px; /* Réduit la taille du texte sur l'image */
+        padding: 8px; /* Réduit l'espacement autour du texte */
+        margin-top: 30px; /* Espace au-dessus */
+    }
+
+    .text_expliquation {
+        font-size: 18px; /* Réduit la taille du texte pour une meilleure lisibilité sur mobile */
+        width: 90%; /* Utilise une plus grande largeur sur mobile */
+        margin: 20px auto; /* Réduit les marges pour ajuster le contenu */
+    }
+
+    .banniere {
+        font-size: 18px; /* Réduit la taille du texte de la bannière */
+        padding: 8px; /* Réduit le padding de la bannière */
+    }
+
+    .center {
+        font-size: 24px; /* Ajuste la taille du titre central */
+        margin-top: 20px; /* Réduit l'espace au-dessus */
+    }
+
+    .container .image {
+        width: 100%; /* Assure que l'image utilise toute la largeur de l'écran */
+        height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
+    }
+}
