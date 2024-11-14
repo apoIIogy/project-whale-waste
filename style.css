@@ -59,8 +59,10 @@ body {
     margin: 0 auto; /* Centre horizontalement le conteneur */
     text-align: center; /* Centre le contenu à l'intérieur */
     width: 100%; /* Largeur du conteneur */
+    overflow: hidden; /* Assure que l'image ne dépasse pas */
 }
 .image {
+    width: 100%; /* Assure que l'image utilise toute la largeur de l'écran */
     height: auto; /* Garde la proportion */
     display: block;
     margin: 0 auto;
